@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+.todo-container{
+	width: 100%;
+	min-height: 98.8vh;
+	background-color: rgb(191, 166, 221);
+	
+	padding-top: 10px;
+}
+.to-do{
+	width: 100%;
+	max-width: 500px;
+	background-color: rgb(220, 237, 186);
+	margin: 100px auto 20px;
+	padding: 50px ;
+	border-radius: 15px;
+}
+
+.to-do h1{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.to-do h1 img{
+	width: 30px;
+	margin-left: 10px;
+}
+
+
+.todo-input{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	border-radius: 30px;
+}
+
+input{
+	border: none;
+	outline: none;
+	background: transparent;
+	padding: 15px;
+}
+
+button{
+	padding: 15px 50px;
+	background-color: rgb(232, 153, 187);
+	color: beige;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+}
+
+ul{
+	padding: 10px;
+}
+
+ul li{
+	list-style: none;
+	padding: 12px 20px 12px 40px;
+	cursor: pointer;
+	position: relative;
+}
+
+ul li::before{
+	content: '';
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-image: url(https://img.icons8.com/material/24/circled.png) ;
+	background-size: cover;
+	top: 7px;
+	left: 8px;
+}
+
+ul li.checked{
+	color: #5f5f5f;
+	text-decoration: line-through;
+}
+ul li.checked::before{
+	background-image: url(https://img.icons8.com/pulsar-color/48/filled-circle.png);
+}
+
+ul li span{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	
+}
+
+
+#currentDate{
+	padding: 10px;
+	margin: 50px;
+	border: 2px solid rgb(191, 166, 221);
+	background-color: rgb(232, 153, 187);
+	color: white;
+	border-radius: 20px;
+}
